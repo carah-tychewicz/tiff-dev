@@ -4,7 +4,20 @@ export default {
     /* ... */
   },
   plugins: [
-    /* ... */
+    [
+      "@snowpack/plugin-react-refresh", {
+
+      },
+      
+      "@snowpack/plugin-sass", {
+        
+        native: true,
+        
+        "compilerOptions": {
+          "update": true,
+        }
+      }
+    ]
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
